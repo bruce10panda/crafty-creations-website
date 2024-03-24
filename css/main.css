@@ -40,25 +40,25 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px; /* Afstand tussen de kaarten */
+  gap: 20px;
   padding: 20px;
 }
 
 .card {
   background-color: #FDE1E1;
-  border: 2px solid #CF8E8E; /* De outline van de kaart */
-  border-radius: 15px; /* Afgeronde hoeken */
+  border: 2px solid #CF8E8E;
+  border-radius: 15px;
   width: 300px;
   height: 400px;
   text-align: center;
   padding: 20px;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Een lichte schaduw voor diepte */
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
 }
 
 .product-image {
   max-width: 280px;
   max-height: 200px;
-  border-radius: 10px; /* Afgeronde hoeken voor de afbeelding */
+  border-radius: 10px;
   margin-bottom: 20px;
 }
 
@@ -69,7 +69,7 @@ header {
 }
 
 .card h3 {
-  margin: 10px 0; /* Ruimte rond de titel */
+  margin: 10px 0;
 }
 
 .card button {
@@ -84,5 +84,5 @@ header {
 }
 
 .card button:hover {
-  background-color: #EDC3C3; /* Een lichtere tint voor de hover effect */
+  background-color: #EDC3C3;
 }
