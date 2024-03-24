@@ -1,0 +1,88 @@
+body {
+  background-color: #FDEEEE;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #EDC3C3;
+  color: #CF8E8E;
+  border-radius: 90px;
+  width: 90vw;
+  height: 100px;
+  font-family: mouldy cheese;
+  font-size: 40px;
+}
+
+.header-left, .header-right {
+  margin: 0 30px;
+}
+
+.main-title {
+  text-align: center;
+  color: #CF8E8E;
+  font-size: 150px;
+  font-family: 'Mouldy Cheese';
+  margin-top: 40px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Afstand tussen de kaarten */
+  padding: 20px;
+}
+
+.card {
+  background-color: #FDE1E1;
+  border: 2px solid #CF8E8E; /* De outline van de kaart */
+  border-radius: 15px; /* Afgeronde hoeken */
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Een lichte schaduw voor diepte */
+}
+
+.product-image {
+  max-width: 280px;
+  max-height: 200px;
+  border-radius: 10px; /* Afgeronde hoeken voor de afbeelding */
+  margin-bottom: 20px;
+}
+
+.product-title {
+  font-family: 'Mouldy Cheese';
+  font-size: 40px;
+  color: #CF8E8E;
+}
+
+.card h3 {
+  margin: 10px 0; /* Ruimte rond de titel */
+}
+
+.card button {
+  background-color: #EDC3C3;
+  color: #CF8E8E;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Mouldy Cheese';
+}
+
+.card button:hover {
+  background-color: #EDC3C3; /* Een lichtere tint voor de hover effect */
+}
