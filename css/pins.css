@@ -1,5 +1,5 @@
 body {
-  background-color: #FDEEEE;
+  background-color: #FDF3EE;
 }
 
 header {
@@ -16,8 +16,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #EDC3C3;
-  color: #CF8E8E;
+  background-color: #EDD0C3;
+  color: #CFA58E;
   border-radius: 90px;
   width: 90vw;
   height: 100px;
@@ -31,7 +31,7 @@ header {
 
 .main-title {
   text-align: center;
-  color: #CF8E8E;
+  color: #CFA58E;
   font-size: 150px;
   font-family: 'Mouldy Cheese';
   margin-top: 40px;
@@ -46,11 +46,12 @@ header {
 }
 
 .card {
-  background-color: #FDE1E1;
-  border: 2px solid #CF8E8E; 
+  display: flex;
+  background-color: #FDEBE1;
+  border: 2px solid #CFA58E; 
   border-radius: 15px; 
-  width: 300px;
-  height: 400px;
+  width: 80%;
+  height: auto;
   text-align: center;
   padding: 20px;
   box-shadow: 0px 4px 8px rgba(0,0,0,0.1); 
@@ -58,29 +59,43 @@ header {
 }
 
 .product-image {
-  max-width: 280px;
-  max-height: 170px;
+  max-width: 40vw;
+  max-height: 50vh;
   border-radius: 10px; 
   margin-bottom: 20px;
 }
 
 .product-title {
-  position: absolute; 
-  top: 160px; 
-  left: 0; 
-  right: 0; 
+  position: absolute;
+  top: 20px; /* Adjust the distance from the top */
+  right: 46%; /* Position it in the middle horizontally */
+  transform: translateX(50%); /* Center it horizontally */
   font-family: 'Mouldy Cheese';
-  font-size: 40px;
-  color: #CF8E8E;
+  font-size: 50px;
+  color: #CFA58E;
+  text-align: left;
 }
+
+.product-description {
+  position: absolute;
+  top: 200px; /* Adjust based on your title size and spacing */
+  left: 51%; /* Ensure the text is centered and well-spaced */
+  font-family: 'Mouldy Cheese', sans-serif;
+  font-size: 24px;
+  color: #CFA58E;
+  text-align: left; /* Center the text if it fits your design */
+  margin: 10px 0; /* Add some space around */
+  max-width: 500px;
+}
+
 
 .card button {
   position: absolute; 
   bottom: 20px; 
-  left: 50%; 
+  right: 20%;
   transform: translateX(-50%); 
-  background-color: #EDC3C3;
-  color: #CF8E8E;
+  background-color: #EDD0C3;
+  color: #CFA58E;
   border: none;
   padding: 15px 20px;
   border-radius: 10px;
@@ -92,12 +107,12 @@ header {
 }
 
 .card button:hover {
-  background-color: #CF8E8E; 
-  color: #EDC3C3; 
+  background-color: #CFA58E; 
+  color: #EDD0C3; 
 }
 
 a {
-  color: #CF8E8E;
+  color: #CFA58E;
   text-decoration: none;
 }
 
@@ -112,7 +127,7 @@ a:hover {
   src: url(fonts/MouldyCheese.ttf);
 }
 
-@media (max-width: 768px) {
+@media (max-aspect-ratio: 1/1) {
   .header-content {
     text-align: center;
     height: auto;
@@ -124,7 +139,32 @@ a:hover {
     margin: 10px 15px;
   }
 
-  .main-title {
-    font-size: 90px;
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 85vw;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .product-image {
+    max-width: 90vw;
+    max-height: 50vh;
+  }
+  
+
+  .product-title, .product-description {
+    position: static;
+    transform: none;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .card button {
+    position: static;
+    margin: 0 auto;
+    transform: none;
   }
 }
