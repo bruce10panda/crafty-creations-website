@@ -7,9 +7,9 @@ header {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
   position: sticky;
-  top: 20px;
+  top: 2vh;
 }
 
 .header-content {
@@ -18,97 +18,79 @@ header {
   align-items: center;
   background-color: #EDD0C3;
   color: #CFA58E;
-  border-radius: 90px;
+  border-radius: 4.5vw;
   width: 90vw;
-  height: 100px;
+  height: 10vh;
   font-family: 'Mouldy Cheese';
-  font-size: 40px;
+  font-size: 2.2vw;
 }
 
 .header-left, .header-right {
-  margin: 0 30px;
+  margin: 0 1.5vw;
 }
 
 .main-title {
   text-align: center;
   color: #CFA58E;
-  font-size: 150px;
+  font-size: 7.8vw;
   font-family: 'Mouldy Cheese';
-  margin-top: 40px;
+  margin-top: 4vh;
 }
 
 .cards-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px; 
-  padding: 20px;
+  gap: 2vw;
+  padding: 2vw;
+  height: 75vh;
 }
 
 .card {
   display: flex;
   background-color: #FDEBE1;
-  border: 2px solid #CFA58E; 
-  border-radius: 15px; 
-  width: 80%;
+  border: 0.2vw solid #CFA58E;
+  border-radius: 1.5vw;
+  width: 80vw;
   height: auto;
   text-align: center;
-  padding: 20px;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.1); 
-  position: relative; 
+  padding: 2vw;
+  box-shadow: 0.2vw 0.4vw 0.8vw rgba(0,0,0,0.1);
+  position: relative;
 }
 
-.product-image {
-  max-width: 40vw;
-  max-height: 50vh;
-  border-radius: 10px; 
-  margin-bottom: 20px;
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.product-title {
-  position: absolute;
-  top: 20px; /* Adjust the distance from the top */
-  right: 46%; /* Position it in the middle horizontally */
-  transform: translateX(50%); /* Center it horizontally */
-  font-family: 'Mouldy Cheese';
-  font-size: 50px;
-  color: #CFA58E;
-  text-align: left;
+.left-image,
+.right-image {
+  max-width: 40%;
+  height: auto;
+  margin: 50px;
 }
-
-.product-description {
-  position: absolute;
-  top: 200px; /* Adjust based on your title size and spacing */
-  left: 51%; /* Ensure the text is centered and well-spaced */
-  font-family: 'Mouldy Cheese', sans-serif;
-  font-size: 24px;
-  color: #CFA58E;
-  text-align: left; /* Center the text if it fits your design */
-  margin: 10px 0; /* Add some space around */
-  max-width: 500px;
-}
-
 
 .card button {
-  position: absolute; 
-  bottom: 20px; 
-  right: 20%;
-  transform: translateX(-50%); 
+  position: absolute;
+  bottom: 2vh;
+  right: 1.5vw;
   background-color: #EDD0C3;
   color: #CFA58E;
   border: none;
-  padding: 15px 20px;
-  border-radius: 10px;
+  border-radius: 1vw;
   cursor: pointer;
   font-family: 'Mouldy Cheese';
-  width: 240px;
-  height: 60px;
-  font-size: 30px;
+  width: 12vw;
+  height: 8vh;
+  font-size: 1.5vw;
 }
 
 .card button:hover {
-  background-color: #CFA58E; 
-  color: #EDD0C3; 
+  background-color: #CFA58E;
+  color: #EDD0C3;
 }
 
 a {
@@ -117,9 +99,9 @@ a {
 }
 
 a:hover {
-  color:#FDEEEE; 
-  text-decoration:none; 
-  cursor:pointer;  
+  color: #FDF3EE;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @font-face {
@@ -127,7 +109,7 @@ a:hover {
   src: url(fonts/MouldyCheese.ttf);
 }
 
-@media (max-aspect-ratio: 1/1) {
+@media screen and (max-aspect-ratio: 1/1) {
   .header-content {
     text-align: center;
     height: auto;
@@ -139,32 +121,29 @@ a:hover {
     margin: 10px 15px;
   }
 
-  .cards-container {
-    flex-direction: column;
-  }
-
   .card {
-    width: 85vw;
     flex-direction: column;
-    padding: 10px;
+    align-items: center;
   }
 
-  .product-image {
-    max-width: 90vw;
-    max-height: 50vh;
+  .left-image,
+  .right-image {
+    max-width: 60%;
+    height: auto;
   }
-  
 
-  .product-title, .product-description {
-    position: static;
-    transform: none;
-    text-align: center;
-    margin: 20px 0;
+  .left-image {
+    max-width: 90%;
+    margin-top: 50px;
+  }
+
+  .right-image {
+    margin-bottom: 200px;
   }
 
   .card button {
-    position: static;
-    margin: 0 auto;
-    transform: none;
+    width: 30vw;
+    height: 7vh;
+    font-size: 3vh;
   }
 }

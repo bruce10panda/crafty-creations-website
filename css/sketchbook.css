@@ -130,11 +130,15 @@ a:hover {
   .right-image {
     max-width: 60%;
     height: auto;
-    margin: 50px;
   }
 
   .left-image {
     max-width: 90%;
+    margin-top: 50px;
+  }
+
+  .right-image {
+    margin-bottom: 200px;
   }
 
   .card button {
